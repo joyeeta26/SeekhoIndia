@@ -1,0 +1,125 @@
+
+
+.blink{
+	font:bold 60px joker;
+	
+	padding-left:100px;
+	padding-top:100px;
+	animation:blink 1.5s infinite;
+}
+@keyframes blink
+{
+	0%{opacity:1;}
+	50%{opacity:0;}
+	100%{opacity:1;}
+}
+#main{
+	background:#E8EAF3;
+	height:700px;
+}
+#login{
+	background: #3b5998;
+	height:90px;
+	color:white;
+
+}
+#unsuccessfulLogin{
+	color:red;
+	visibility:hidden;
+}
+div#reg td{
+	padding:10px;
+}
+#bees{
+	 float:left;
+	 padding-right:380px;
+	 position:relative;
+	padding-top:40px;
+	padding-left:50px;
+}
+
+#bees:hover{
+	 opacity:0.6;
+ }
+ #refresh:hover{
+	 cursor:pointer;
+ }
+#reg{
+	
+	font:30px bold Times New Roman;
+	
+}
+
+#loginform{
+	float:right;
+}
+#loginTable{
+	padding:10px;
+	margin-right:170px;
+}
+.myInput{
+	border:1px solid #BDC7D8;
+	height:30px;
+	width:300px;
+	border-radius:5px;
+	color:#3694D0;
+	font:bold 20px Monotype Corsiva;
+}
+.myInput:hover{
+	background:#F0F1F7;
+}
+.myButton{
+	border-style:none;
+	background:#75B660;
+	border-radius:5px;
+	width:300px;
+	color:white;
+	height:30px;
+	font:bold 20px Monotype Corsiva;
+}
+.myButton:hover{
+	background:#97D57C;
+	border-style:ridge;
+	border-color:#588A44;
+	cursor:pointer;
+}
+input{
+	text-align:center;
+	
+}
+#table{
+	padding-top:30px;
+}
+.inputhere{
+	border-style:none;
+	height:20px;
+	width:160px;
+	
+	color:#3694D0;
+	font:bold 20px Monotype Corsiva;
+}
+.inputhere:hover{
+	background:#E8E8FF;
+	
+}
+.Log{
+	border-style:none;
+	border-color:white;
+	background:#365899;
+	border-radius:2px;
+	width:60px;
+	color:white;
+	height:27px;
+	font:bold 15px Times New Roman;
+}
+.Log:hover{
+    cursor:pointer;
+	border-style:ridge;
+	border-color:white;
+}
+
+
+::-webkit-input-placeholder { color: lightgrey; }
+::-moz-placeholder {color: lightgrey; }
+:-ms-input-placeholder { color: lightgrey; } 
+:-o-input-placeholder { color: lightgrey; } 

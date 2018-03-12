@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login As Worker</title>
+		<link rel='stylesheet' href='log_Reg.css'>
+		
+		<script type='text/javascript' src='registration.js'>
+				
+
+		</script>
+	</head>
+	<body>
+	<div id="main">
+		<header id='login'>
+		<span class='blink'>Get involved</span>
+		<div id='loginform'>
+			
+			<form name='form1' method='GET' action='login.php'>
+			<table id='loginTable'>
+				<tr><td>Username:</td><td>Password:</td></tr>
+				<tr><td><input type='text' name='name' class='inputhere'></td><td><input type='password'name='password'class='inputhere'></td>
+				<td><input type='submit' value='Log In' class='Log'></td></tr>
+				<tr><td id='unsuccessfulLogin'>Invalid Username or Password</td></tr>
+			</table>
+			</form>
+			
+		</div>
+		</header>
+	
+		<div id='reg'>
+		<section id='Registration'>
+		<img src='images\charity-search.png' height='500px' width='350px' alt='failed to load'id='bees'>
+		<form name='form2'method='GET'action='log_Reg.php'>
+			<table id='table'>
+				<tr><th id='Thead'><b>Register as NGO Worker</b></th></tr>
+				<tr><td><input type='text' name='uname'id='Uname'maxlength='30'placeholder='Username'class='myInput'onkeyup="process(this.value,'verifyUsername.php');" value='<?php if(isset($UNAME) and !empty($UNAME)){echo $UNAME;}?>'></td><td id="msg"></td></tr>
+				<tr><td><input type='password' name='pwd'class='myInput'placeholder='Password'onkeyup="validate(this.value,'passwordStrength.php');"></td><td id="strength"></td></tr>
+				<tr><td><input type='password' name='repwd'class='myInput'placeholder='Retype Password'onkeyup="matchPass('verifyPassword.php');"></td><td id='msg1'></td></tr>
+				<tr><td><input type='text' name='mail'maxlength='35'class='myInput'placeholder='Email-Id'onblur="validateemail(this.value)"value='<?php if(isset($MAIL) and !empty($MAIL)){echo $MAIL;}?>'></td><td id="msg2"></td></tr>
+				<tr><td><input type='text' name='fname'maxlength='30'class='myInput'placeholder='Firstname'value='<?php if(isset($FNAME) and !empty($FNAME)){echo $FNAME;}?>'></td></tr>
+				<tr><td><input type='text' name='sname'maxlength='30'class='myInput'placeholder='Surname'value='<?php if(isset($SNAME) and !empty($SNAME)){echo $SNAME;}?>'></td></tr>
+				<tr><td><font size='3px'>Enter the text below:</font><input type='text'name='captcha'></td></tr>
+				<tr><td><center><img id='captcha_image'src='captch.php'width='120'height='40'> &nbsp;<img src='images/refresh.png'id='refresh'name='refresh'width='20px'height='20px'onclick='refreshing();'></center></td></tr>
+				<tr><td><input type='submit' value='Register'class='myButton'></td></tr>
+				
+			</table>
+		</form>
+		</section>
+		</div>
+		
+	</div>
+	</body>
+</html>

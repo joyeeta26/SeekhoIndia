@@ -1,0 +1,43 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+header,nav,aside,hgroup,footer,article,section{
+	display:block;
+}
+body{
+	text-align:center;
+}
+#big_wrapper{
+	border-bottom:2px groove grey;
+	width:1000px;
+	margin:20px auto;
+	
+	text-align:left;
+	background:lightgreen;
+}
+#big_wrapper:hover{
+	border:2px solid green;
+}
+#top_header{
+	text-align:center;
+	border-bottom:3px dotted grey;
+	font-style:monospace;
+	padding:20px;
+	font:bold 20px black;
+	
+}
+#top_header:first-letter{
+	font:bold 80px joker;
+		color:green;
+}
+#main_section{
+	text-align:center;
+	margin-left:280px;
+	color:green;
+	font: bold 30px Monotype Corsiva;
+}
+td{
+	
+	padding:20px;
+}

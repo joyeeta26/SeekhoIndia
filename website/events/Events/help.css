@@ -1,0 +1,22 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+header,section,article,nav,aside,hgroup,footer{
+	display:block;
+}
+#big{
+	width:1200px;
+	height:550px;
+	border-top:2px double black;
+	text-align:center;
+	padding:20px;
+	margin:20px auto;
+}
+#main_heading{
+	color:#5500FF;
+}
+#main_heading::first-letter{
+	font-size:40px;
+	
+}

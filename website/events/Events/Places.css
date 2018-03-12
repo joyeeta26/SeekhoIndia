@@ -1,0 +1,40 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+header,nav,aside,hgroup,footer,article,section{
+	display:block;
+}
+body{
+	text-align:center;
+}
+.place{
+	border-bottom:1px solid lightgrey;
+	width:1200px;
+	margin:10px auto;
+	text-align:left;
+		margin:10px;
+	height:200px;
+}
+.place:hover{
+	background:#E1E1E1;
+	cursor:pointer;
+	
+}
+img{
+	float:right;
+}
+h1{
+	font:normal 20px Times New Roman;
+	
+}
+h2{
+	font:normal 15px Times New Roman;
+	color:grey;
+}
+p{
+	font:normal 15px Times New Roman;
+	margin-top:5px;
+	padding:5px;
+}
+		
